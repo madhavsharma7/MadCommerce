@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Redirect to index.html after the alert is dismissed
         // window.location.href = '../index.html';
+        
     });
 });
 
@@ -138,8 +139,6 @@ function sendMail() {
             // Clear form fields after successful email sending
             document.getElementById("firstname").value = "";
             document.getElementById("email").value = "";
-            // document.getElementById("phoneNumber").value = "";
-            // document.getElementById("message").value = "";
 
             // Log the response and show success alert
             console.log("Email sent successfully:", res);
@@ -149,6 +148,7 @@ function sendMail() {
             window.location.href = '../index.html';
 
         })
+
         .catch(err => {
             // Log the error for debugging
             console.error("Failed to send email. Error details:", err);
